@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-title class="header">To Do List
+  </ion-title>
+  <ion-avatar slot="end">
+    <img src="https://lisansaday.ticaret.edu.tr/wp-content/uploads/t%C4%B1k.png">
+  </ion-avatar>
+  <ion-buttons slot="start">
+      <ion-menu-button menu="main"></ion-menu-button>
+  </ion-buttons>
+  </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let ver of veri;">
+    <ion-card-header>
+  
+      <ion-card-title> <ion-label style="color: red; font-size: 25px;">TITLE : </ion-label> {{ver.title}}</ion-card-title><br>
+      <ion-card-subtitle><ion-label style="color: red; font-size: 25px;">DATE : </ion-label> {{ver.date}}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+    
+      <ion-label style="color: teal; font-size: 20px; font-weight: 700;">DESCRIPTION : </ion-label> {{ver.description}}
+      <div>
+        <ion-avatar  >
+          <img src="https://media.istockphoto.com/vectors/green-check-mark-icon-in-a-circle-tick-symbol-in-green-color-vector-id1190641917?k=20&m=1190641917&s=170667a&w=0&h=Xy9szUsw3QOoN8PPDUBO3GchuBsvJ92TsJd2PKDyQ2M=">
+        </ion-avatar>
+
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

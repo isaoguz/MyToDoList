@@ -1,0 +1,7 @@
+{
+  "name": "full-capacite-services",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

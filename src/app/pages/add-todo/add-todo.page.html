@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add To Do </ion-title>
+    <ion-avatar slot="end">
+      <img src="https://e7.pngegg.com/pngimages/423/156/png-clipart-computer-icons-blue-oklahoma-red-check-mark-check-mark-button.png">
+    </ion-avatar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label style="font-size: 15px; color:rebeccapurple" position="floating">Title</ion-label>
+    <ion-input  [(ngModel)]="Title" class="input"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label style="font-size: 15px; color:rebeccapurple" position="floating">Description</ion-label>
+    <ion-input [(ngModel)]="Description" class="input"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label style="font-size: 15px; color:rebeccapurple" position="floating">Date</ion-label>
+    <ion-input [(ngModel)]="Date" class="input"></ion-input>
+  </ion-item>
+
+  <div>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6.5">
+          <ion-button (click)="save()" color="danger">SAVE</ion-button>
+        </ion-col>
+        <ion-col size="5">
+          <ion-button (click)="goTo()" color="danger"
+            >GO TO TO DO LIST</ion-button
+          >
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
